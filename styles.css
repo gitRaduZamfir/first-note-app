@@ -1,0 +1,23 @@
+.aside_active {
+  transform: translateX(-20%);
+  z-index: 30;
+}
+
+ul {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+li {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new_notes {
+  left: 0;
+  right: 0;
+  top: 20;
+  position: absolute;
+}

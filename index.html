@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/812f3dc262.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Notes Pet-project Radu Zamfir</title>
+  </head>
+  <body class="flex relative">
+    <aside
+      id="menu_panel"
+      class="hidden bg-blue-200 flex flex-col w-full h-full absolute z-90"
+    >
+      <div id="nav_toolbar" class="flex justify-between">
+        <div id="search_block" class="p-2 m-auto">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="ml-20 w-36 py-1 pl-3 m-auto rounded-l-xl"
+          /><button id="search_button" class="text-white text-l cursor-pointer">
+            <i
+              class="fa-solid fa-magnifying-glass bg-gray-400 px-3 py-2 rounded-r-xl"
+            ></i>
+          </button>
+        </div>
+        <button
+          id="close_button"
+          class="py-2 px-2 text-white text-xl flex m-auto cursor-pointer"
+        >
+          <i class="fa-solid fa-xmark bg-red-500 px-3 py-2 rounded-xl"></i>
+        </button>
+      </div>
+      <div
+        id="nav_list_aside"
+        class="px-24 py-3 w-full bg-blue-100 table overflow-hidden"
+      >
+        <ul class="space-y-2 max-w-xs h-[89vh]"></ul>
+      </div>
+    </aside>
+    <main class="w-full">
+      <section>
+        <nav class="p-2 flex justify-between relative">
+          <button
+            id="menu_button"
+            class="bg-green-300 px-3 py-2 rounded-xl text-white text-sm cursor-pointer"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button
+            id="add_button"
+            class="bg-green-300 px-3 text-white rounded-xl text-sm cursor-pointer"
+          >
+            <i class="fa-solid fa-square-plus"></i>
+          </button>
+        </nav>
+        <div id="Note_0" class="new_notes mx-2">
+          <div
+            class="tools bg-gray-300 px-3 flex justify-between space-x-2 rounded-t-lg hidden"
+          >
+            <div class="group_save-delete">
+              <button
+                id="save_button"
+                class="px-2 py-3 text-blue-500 cursor-pointer text-[14px]"
+              >
+                <i class="fa-solid fa-floppy-disk"></i>
+              </button>
+              <button
+                id="delete_button"
+                class="px-1 py-1 text-red-500 text-[14px] cursor-pointer"
+              >
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <div class="group_edit-close">
+              <button
+                id="edit_button"
+                class="px-2 py-3 text-orange-500 cursor-pointer"
+              >
+                <i class="fa-solid fa-pen-to-square text-sm"></i>
+              </button>
+              <button
+                id="close_button_note"
+                class="px-2 py-3 text-red-500 text-[14px] cursor-pointer"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <textarea
+            class="note bg-gray-100 w-full h-[86vh] resize-none px-2 py-1 font-mono text-base text-center text-gray-300"
+            disabled
+          >
+ &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;Press + button to add new note</textarea
+          >
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
